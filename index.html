@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1 LPPA</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="https://i.pinimg.com/474x/6e/56/88/6e5688ba01de7172d58c0054e6c0110a.jpg">
+    <!--defer lo que hace es esperar a que termine de cargar el html para luego cargar el script-->
+    <script src="validaciones-form.js" defer></script>
+</head>
+<body>
+    <header class="container-encabezado">
+        <div class="tittle">
+            <h1>Parcial 1 LPPA Amarillo Juan</h1>
+        </div>
+
+        <nav class="nav-encabezado">
+            <a href="#"><img class="icon-hamburguer" alt="Icono_Hamburguesa" src="iconos/menu-icon.jpg"></a>
+            <a class="description" href="index.html">Inicio</a>
+            <a class="description" href="#">Noticias</a>
+            <a class="description" href="#">Más Info</a>
+        </nav>
+    </header>
+
+    <div class="frm-conteiner">
+        <form class="form-registro" id="frm-registro">
+            <h2>Registro</h2>
+            <div class="row">
+                <div class="conteiner-izquierda">
+                    <div class="conteiner-nombre flex-column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <div class="text-error"></div>
+                    </div>
+                    <div class="conteiner-apellido flex-column">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                        <div class="text-error"></div>
+                    </div>
+                </div>
+                <div class="conteiner-derecha">
+                    <div class="conteiner-email flex-column">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <div class="text-error"></div>
+                    </div>
+                    <div class="conteiner-edad flex-column">
+                        <label for="edad">Edad</label>
+                        <input type="text" name="edad" id="edad" placeholder="Edad">
+                        <div class="text-error"></div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+    <footer>
+        <h4>Copiry Right: Todos los Derechos Reservados.</h4>
+    </footer>
+
+        <!-- The Modal -->
+    <div id="modalForm" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>ENVIO DE FORMULARIO</h2>
+            <p class="correcto"></p>
+            <p class="nombre"></p>
+            <p class="apellido"></p>
+            <p class="email"></p>
+            <p class="edad"></p>
+            <p class="error"></p>
+        </div>
+    </div>
+</body>
+</html>
